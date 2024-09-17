@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Medicine</title>
+    <style>
+        /* Global Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Soft background */
+            color: #2e2e2e; /* Light gray text for readability */
+        }
+
+        /* Header Section */
+        header {
+            background-color: #0a7062; /* Metallic seaweed color */
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        /* Banner Section */
+        .banner {
+            background-color: #0a7062; /* Solid metallic seaweed color for better visibility */
+            padding: 100px 20px;
+            color: #f8f9fa; /* Light color for text contrast */
+            text-align: center;
+        }
+
+        .banner h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .banner p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Categories Section */
+        .categories {
+            background-color: white;
+            padding: 50px 0;
+        }
+
+        .categories h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #2e2e2e; /* Light gray for titles */
+        }
+
+        .category-list {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .category-item {
+            width: 30%;
+            text-align: center;
+        }
+
+        .category-item img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .category-item h3 {
+            color: #0a7062;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        /* Featured Medicines Section */
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 15px;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2.section-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 40px;
+            color: #2e2e2e;
+        }
+
+        .medicine-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .medicine-item {
+            background-color: #e5f6f3; /* Light bluish background for contrast */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 30%;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .medicine-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .medicine-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .medicine-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0a7062;
+            margin: 10px 0;
+        }
+
+        .medicine-price {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: #0a7062;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #095b50; /* Darker metallic seaweed for hover */
+        }
+
+        /* Testimonials Section */
+        .testimonials {
+            background-color: #0a7062;
+            color: #f8f9fa;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .testimonials p {
+            font-size: 16px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #2e2e2e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Buy Medicine</h1>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="banner">
+        <h2>Convenient Medicine Purchase</h2>
+        <p>Buy essential medicines directly from our hospital and have them delivered to your door.</p>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Our Categories</h2>
+        <div class="category-list">
+            <div class="category-item">
+                <img src="asprin.png" alt="Pain Relievers">
+                <h3>Pain Relievers</h3>
+            </div>
+            <div class="category-item">
+                <img src="antibiotics.png" alt="Antibiotics">
+                <h3>Antibiotics</h3>
+            </div>
+            <div class="category-item">
+                <img src="vitamin.png" alt="Vitamins">
+                <h3>Vitamins & Supplements</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Medicines Section -->
+    <div class="container">
+        <h2 class="section-title">Featured Medicines</h2>
+        <div class="medicine-list">
+            <!-- Medicine 1 -->
+            <div class="medicine-item">
+                <img src="paracetomol.png" alt="Medicine 1">
+                <p class="medicine-name">Paracetamol</p>
+                <p class="medicine-price">$5</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <!-- Medicine 2 -->
+            <div class="medicine-item">
+                <img src="ibuprofen.png" alt="Medicine 2">
+                <p class="medicine-name">Ibuprofen</p>
+                <p class="medicine-price">$8</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+
+            <!-- Medicine 3 -->
+            <div class="medicine-item">
+                <img src="asprin.png" alt="Medicine 3">
+                <p class="medicine-name">Aspirin</p>
+                <p class="medicine-price">$6</p>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Patients Say</h2>
+        <p>"The medicine delivery service is quick and reliable. It's very convenient to order medicines after my consultation at the hospital!"</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; WellCare 2024 . All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

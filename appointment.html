@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Medical Appointment Form</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('appointment bg.png'); /* Add your background image URL */
+      background-size:cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .appointment-form {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 10px;
+      width: 600px;
+      max-width: 90%;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .appointment-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+
+    .appointment-form .input-group {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .appointment-form .input-group input,
+    .appointment-form .input-group select {
+      width: 48%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      font-size: 1em;
+    }
+
+    .appointment-form input::placeholder,
+    .appointment-form select {
+      color: #ddd;
+    }
+
+    .appointment-form .submit-btn {
+      background-color: #ffa500;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 1.1em;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .appointment-form .submit-btn:hover {
+      background-color: #ff8c00;
+    }
+
+    .appointment-form p {
+      text-align: center;
+      color: #bbb;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="appointment-form">
+    <h2>Medical Appointment Form</h2>
+    <h3 style="text-align:center; margin-bottom: 20px;">Make an Appointment</h3>
+    
+    <form action="#">
+      <div class="input-group">
+        <input type="text" placeholder="Patient Name" required>
+        <input type="date" placeholder="Select Date" required>
+      </div>
+
+      <div class="input-group">
+        <input type="text" placeholder="Phone Number" required>
+        <select required>
+          <option value="" disabled selected>Department</option>
+          <option value="Cardiology">Cardiology</option>
+          <option value="Neurology">Neurology</option>
+          <option value="Orthopedics">Orthopedics</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <input type="email" placeholder="Email" required>
+        <select required>
+          <option value="" disabled selected>Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+
+      <div class="input-group">
+        <input type="text" placeholder="Symptoms" required>
+        <input type="time" required>
+      </div>
+
+      <button type="submit" class="submit-btn">Make an Appointment</button>
+    </form>
+
+    <p>&copy; Wellcare 2024. All Rights Reserved</p>
+  </div>
+
+</body>
+</html>

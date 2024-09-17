@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insurance Tracking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('Insurance BG.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Lighter, semi-transparent background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0a7e8c; /* Metallic Seaweed */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="tel"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent input fields */
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus {
+            border-color: #0a7e8c; /* Metallic Seaweed */
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #0a7e8c; /* Metallic Seaweed */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #086671;
+        }
+
+        #otp-section {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Insurance Tracking</h2>
+        <form id="insurance-form">
+            <label for="provider">Policy Provider Name</label>
+            <input type="text" id="provider" name="provider" placeholder="Enter your insurance provider" required>
+
+            <label for="policy-number">Policy Number</label>
+            <input type="text" id="policy-number" name="policy-number" placeholder="Enter your policy number" required>
+
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone-number" placeholder="Enter your registered phone number" required>
+
+            <button type="button" id="send-otp">Send OTP</button>
+
+            <div id="otp-section" style="display: none;">
+                <label for="otp">Enter OTP</label>
+                <input type="text" id="otp" name="otp" placeholder="Enter OTP" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        // Show OTP section when "Send OTP" is clicked
+        document.getElementById("send-otp").addEventListener("click", function() {
+            document.getElementById("otp-section").style.display = "block";
+        });
+    </script>
+</body>
+</html>

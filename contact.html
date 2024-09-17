@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('Contact.png'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center 20%; /* Move the background image slightly down */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center the form vertically */
+            align-items: center; /* Center the form horizontally */
+            color: #fff;
+        }
+
+        .contact-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #0a7e8c; /* Metallic Seaweed */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #000; /* Dark color for labels */
+            font-weight: bold; /* Make label text bold */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000; /* Dark text color for input fields */
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border-color: #0a7e8c; /* Metallic Seaweed */
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #0a7e8c; /* Metallic Seaweed */
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold; /* Make button text bold */
+        }
+
+        button:hover {
+            background-color: #086671;
+        }
+
+        .contact-info {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+            color: #000; /* Black color for contact info */
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <p>Phone: 9876543210</p>
+        <p>Landline: +123 456 7890</p>
+        <p>Email: info@wellcare.com</p>
+        <p>Address: 4 Nehru Street,Thiruvanmiyur,Chennai,TN</p>
+    </div>
+</body>
+</html>
